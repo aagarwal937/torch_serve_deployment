@@ -7,21 +7,24 @@ import json
 from json import JSONEncoder
 import zipfile
 
+
 # =============================================================================
 # Importing the 3rd party modules
 import numpy
+
 
 # =============================================================================
 # Importing the deep Learning modules
 from sentence_transformers import SentenceTransformer
 
-# =============================================================================
 
+# =============================================================================
 class NumpyArrayEncoder(JSONEncoder):
     def default(self, obj):
         if isinstance(obj, numpy.ndarray):
             return obj.tolist()
         return JSONEncoder.default(self, obj)
+
 
 class SematicSearch(object):
     """
