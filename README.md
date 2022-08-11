@@ -1,9 +1,9 @@
-# torch_serve_deployment
+# Torch Serve Deployment
 
-Below are the detailed steps to deployment a sentence transformer mode either from hugging face model hub or custom trained on any domain data using TorchServe.
+TorchServe is a performant, flexible and easy to use tool for serving PyTorch eager mode and torschripted models. <br>*https://pytorch.org/serve/*
+
+Listed below are the steps to deploy a sentence transformer model either from hugging face model hub or a custom trained model on any domain data using TorchServe.
 It caters to all the requirements of deploying a model in production while providing scalability and flexibility.
-For details on TorchServe you can refer the official repo by clicking on the below link <br>
-    *https://github.com/pytorch/serve*
 
 # Prerequisites
 
