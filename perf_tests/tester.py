@@ -13,7 +13,7 @@ from utils import load_test_case_file
 
 
 # module variables ============================================================
-INFERENCE_API_HOST: str = "http://localhost:9090"
+INFERENCE_API_HOST: str = "http://localhost:8080"
 INFERENCE_MODEL_NAME: str = "mini"
 
 
