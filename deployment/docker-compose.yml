@@ -1,0 +1,24 @@
+services:
+    torchserver:
+        build:
+            context: ''
+        hostname: torchserve
+        container_name: torchserve
+        restart: unless-stopped
+        ports:
+            - 8080:8080
+            - 8081:8081
+            - 8082:8082
+            - 7070:7070
+            - 7071:7071
+        volumes:
+            - /home/kunal/deployment/torchserve_local/model-store:/home/model-server/model-store
+            - /home/kunal/deployment/torchserve_local/logs:/home/model-server/logs
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - capabilities: [gpu]
+        
+# commnad to start this:
+# docker compose up --build --force-recreate
