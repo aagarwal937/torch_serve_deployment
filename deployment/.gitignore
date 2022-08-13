@@ -1,0 +1,2 @@
+# ignore .mar files generated from archiver
+*.mar
